@@ -22,7 +22,11 @@ const Teams = () => {
         {teams.map((item) => (
           <Collapse.Panel key={`${item.id}`} title={
             <>
-              <img src={`/src/assets/teams/${item.name.replaceAll(' ', '')}.png`} width={36} style={{verticalAlign: 'middle', marginRight: 16}} />
+              <img
+                src={new URL(`../../assets/teams/${item.name.replaceAll(' ', '')}.png`, import.meta.url).href}
+                width={36}
+                style={{verticalAlign: 'middle', marginRight: 16}}
+              />
               <span>{item.name}</span>
             </>
           }>
