@@ -1,0 +1,7 @@
+.players .searchBar {
+  padding: 16px;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 99;
+}
