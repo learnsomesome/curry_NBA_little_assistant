@@ -1,7 +1,7 @@
 import { useRoutes } from "react-router-dom";
 import { UserOutline, AppOutline } from 'antd-mobile-icons'
-import Players from "../Pages/Players";
-import Teams from "../Pages/Teams";
+import Players from "../pages/Players";
+import Teams from "../pages/Teams";
 
 export const routes = [
   { path: "/players", icon: <UserOutline />, title: '球员', element: <Players /> },
